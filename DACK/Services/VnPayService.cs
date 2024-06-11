@@ -29,7 +29,7 @@ namespace DACK.Services
 
             vnpay.AddRequestData("vnp_TxnRef", $"{model.OrderId}_{tick}");
 
-            var paymentUrl = vnpay.CreateRequestUrl(_config["VnPay:BaseUrl"], _config["VnPay:BaseUrl"]);
+            var paymentUrl = vnpay.CreateRequestUrl(_config["VnPay:BaseUrl"], _config["VnPay:BaseUrl"]);aaaaa
         }
 
         public VnPaymentResponseModel PaymentExecute(IQueryCollection collections)
